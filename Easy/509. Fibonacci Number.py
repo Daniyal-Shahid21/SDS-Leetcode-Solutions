@@ -8,8 +8,6 @@ class Solution:
             return n
         return self.fib(n-2) + self.fib(n-1)
 
-s = Solution()
-print(s.fib(4))
 """
 Notes/Realizations
  - In all languages except JavaScript and the idea of hoisting (declarations of variables and functions are moved to the top of the defined scope), function declarations must come BEFORE function call.
@@ -18,5 +16,5 @@ Notes/Realizations
     :Stack frames are made for each recursive call of fib(n-2) until we get to fib(1) + fib(0), then all stack frames are popped and the resulting value is finalized in fib(n-2)
  
  FYI
- Objects are instances of classes, so in order to use the defined Solution, create an object of Solution then call it's internal function
+ Objects are instances of classes, so in order to use the defined Solution, create an object of "Solution" then call it's internal function
 """
